@@ -1,0 +1,44 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns:context="http://www.springframework.org/schema/context" 
+xmlns:p="http://www.springframework.org/schema/p" 
+xmlns:tx="http://www.springframework.org/schema/tx" 
+xsi:schemaLocation="http://www.springframework.org/schema/beans 
+http://www.springframework.org/schema/beans/spring-beans.xsd 
+http://www.springframework.org/schema/context 
+http://www.springframework.org/schema/context/spring-context.xsd">
+<bean class ="com.springcore.springcore.collections.Test" name="test" p:name="Shushank">
+<property name="id">
+<value>007</value>
+</property>
+<property name="list">
+<list>
+<value>12345</value>
+<value>513443</value>
+<value>513443</value>
+</list>
+</property>
+<property name="set">
+<set>
+<value> Radhe</value>
+<value> Shyam</value>
+<value >123 </value>
+</set>
+</property>
+<property name="map">
+<map>
+<entry key="1"  value="A"/>
+<entry key ="2" value="B "/>
+<entry key=  "3" value="C"/> 
+</map>
+</property> 
+<property name="pro">
+<props>
+<prop key="1">Shushank</prop>
+<prop key="2">Nikita</prop>
+<prop key="3">Laddu</prop>
+</props>       
+</property>
+</bean>
+ </beans>
