@@ -1,15 +1,17 @@
 package com.springcore.springcore.autowire.annotation;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 
 public class Student {
-	
+	@Autowired
+	@Qualifier("db2")
 	private Details dt;
 
 	public Details getDt() {
 		return dt;
 	}
-	@Autowired
+	
 	public void setDt(Details dt) {
 		System.out.println("Setter Method");
 		this.dt = dt;
